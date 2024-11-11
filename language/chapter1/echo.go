@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 func echoV1() {
@@ -20,4 +21,14 @@ func echoV2() {
 		s += fmt.Sprintf(" %d %s", k, v)
 	}
 	fmt.Println(s)
+}
+
+func echoV3() {
+	a := strings.Join(os.Args, " ")
+	_ = a
+}
+
+func echoV4() {
+	a := os.Args[1:]
+	_ = a
 }

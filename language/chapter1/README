@@ -1,0 +1,13 @@
+go test -bench=.
+```
+goos: darwin
+goarch: arm64
+pkg: chapter1
+BenchmarkEchoV3-8       31692483                37.11 ns/op
+BenchmarkEchoV4-8       1000000000               0.2711 ns/op
+PASS
+ok      chapter1        2.842s
+```
+说明：
+EchoV3 执行了 31692483 次，每次花费37.11 ns
+EchoV3 执行了 1000000000 次，每次花费0.2711 ns
