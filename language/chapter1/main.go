@@ -1,6 +1,7 @@
 package main
 
 func main() {
-	echo()
+	echoV2()
+	//echoV1()
 	//fmt.Println("Hello, World!")
 }
