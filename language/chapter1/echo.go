@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"os"
 )
-func echo(){
+
+func echo() {
 	var s, sep string
 	for i := 0; i < len(os.Args); i++ {
 		s += sep + os.Args[i]
