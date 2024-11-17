@@ -22,6 +22,11 @@ go map 是无须的，现在很多语言的map都是无需的，能有效防止�
 lissajous:
 go run main.go lissajous.go > out.gif
 
+geturl:
+go build -o fetch main.go geturl.go  
+./fetch http://gopl.io 
+./fetch http://gopl.iop  
+./fetch gopl.io 
 
 fetchall:
 ```
@@ -32,3 +37,5 @@ while reading https://godoc.org: read tcp 10.36.234.226:61166->34.149.140.181:44
 49.56s elapsed
 ```
 说明：dial tcp 是在tcp建立连接的时候超时，read: operation 是在建立连接之后读取数据的时候超时导致的
+
+

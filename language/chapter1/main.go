@@ -2,6 +2,7 @@ package main
 
 func main() {
 	fetchall()
+	//getUrl()
 	//lissajous()
 	//dup3()
 	//dup2()

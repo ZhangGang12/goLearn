@@ -1,3 +1,3 @@
 module chapter1
 
-go 1.21.12
+go 1.17
