@@ -21,3 +21,14 @@ go map 是无须的，现在很多语言的map都是无需的，能有效防止�
 
 lissajous:
 go run main.go lissajous.go > out.gif
+
+
+fetchall:
+```
+go run main.go fetchall.go https://golang.org http://gopl.io https://godoc.org
+1.78s     4154  http://gopl.io
+Get "https://golang.org": dial tcp 172.217.12.145:443: i/o timeout
+while reading https://godoc.org: read tcp 10.36.234.226:61166->34.149.140.181:443: read: operation timed out
+49.56s elapsed
+```
+说明：dial tcp 是在tcp建立连接的时候超时，read: operation 是在建立连接之后读取数据的时候超时导致的

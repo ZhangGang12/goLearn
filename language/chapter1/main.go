@@ -1,7 +1,8 @@
 package main
 
 func main() {
-	lissajous()
+	fetchall()
+	//lissajous()
 	//dup3()
 	//dup2()
 	//dup1()
