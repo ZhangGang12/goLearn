@@ -1,7 +1,8 @@
 package main
 
 func main() {
-	fetchall()
+	server()
+	//fetchall()
 	//getUrl()
 	//lissajous()
 	//dup3()

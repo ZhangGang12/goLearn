@@ -45,3 +45,9 @@ go run main.go fetchall.go https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cac
 
 在浏览器中刷新https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Caching 第一次返回200 ok Cache-Contrl 对应的value是：public,max-age=3600 ，第二次返回的就是304 Not Modified 
 所以缓存机制需要浏览器支持，接口每次请求都不会有缓存
+
+server 
+go run main.go server.go   
+curl 127.0.0.1:8000/hello
+URL.Path = "/hello"
+go run main.go server.go lissajous.go
