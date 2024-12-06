@@ -51,3 +51,6 @@ go run main.go server.go
 curl 127.0.0.1:8000/hello
 URL.Path = "/hello"
 go run main.go server.go lissajous.go
+
+
+go语言指针是可见的内存地址，&操作符可以返回一个变量的内存地址，并且*操作符可以获取指针指向的变量内容 
