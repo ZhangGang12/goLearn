@@ -7,7 +7,7 @@ func main() {
 }
 func f(x int) {
 	defer func() {
-		if p := recover(); p != nil {
+		if p := recover(); p != nil { // recover() 捕获异常
 			fmt.Printf("internal error: %v\n", p)
 		}
 	}()
